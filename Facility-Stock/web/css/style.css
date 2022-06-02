@@ -1,150 +1,329 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
-
-/*reset css*/
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 body {
-    font-size: 100%;
-    align-items: center;   
-    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    height: 2000px;
+    width: 100%;
 }
 
-/*Cabeçalho*/
-.cabecalho {
+/*CABEÇALHO*/
+header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-evenly;
+    padding-top:10px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: white;
+    position: fixed;
+    width: 100%;
+}
+
+.titulo a{
+    display: flex;
+}
+
+header h1 {
+    color: #0d346b;
+    font-style:italic;
+}
+
+/*MENU*/
+nav {
+    display: flex;
     justify-content: space-around;
-    padding: 24px;
 }
 
-.cabecalho-imagem {
-    height: 72px;
+nav li, a {
+    list-style: none;
+    padding: 5px;
+    color: rgb(129, 127, 127);
+    text-decoration: none;
 }
 
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
-}
-
-.cabecalho-menu-item {
-    font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.cabecalho-menu-item:hover {
-    color: #000000;
-}
-
-/*Conteúdo*/
-.conteudo {
-    border-top: 0.4px solid #FFF2E7;
-    margin-bottom: 48px;
-}
-
-/*Conteúdo Principal*/
-.conteudo-principal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.menu::after{
+    content: "";
+    position: absolute;
+    left: 940px;
     margin-top: 30px;
+    border-radius: 5px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #ec664e;
 }
 
-.conteudo-principal-escrito {
+.login {
+    padding-top: 10px;
+    color: #0d346b;
+}
+
+.login:hover {
+    transform: rotate(1.0turn);
+    transition: .7s;
+}
+
+header::after {
+    content:"";
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+}
+
+/*SECTION PRINCIPAL*/
+section img {
+    width: 1000px;
+    height: 800px;
+}
+
+.principalImg {
     display: flex;
-    flex-direction: column;
-    gap: 32px;
+    width: 100%;
+    background-color: #f3b0a588;
 }
 
-.conteudo-principal-escrito-titulo {
-    font-family: 'Righteous', cursive;
-    font-weight: 400;
-    font-size: 64px;
-    color: #FFF2E7;
-}
-
-.conteudo-principal-escrito-subtitulo {
-    font-family: 'Sarala', sans-serif;
-    color: #ECD6C4;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.conteudo-principal-escrito-botao {
-    background-color: #ECD6C4;
-    width: 180px;
-    height: 60px;
-    border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    font-family: 'Sarala', sans-serif;
-    color: #2F2325;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.conteudo-principal-escrito-botao:hover {
-    background-color: rgba(236, 214, 196, 0.53);
-}
-
-.conteudo-principal-escrito-botao-item {
-    text-decoration: none;
-    color: #2F2325;
-}
-
-.conteudo-principal-escrito-botao-item:hover {
-    text-decoration: none;
-}
-
-.conteudo-principal-escrito-botao-item:focus {
-    text-decoration: none;
-}
-
-.conteudo-principal-imagem {
-    height: 430px;
-}
-
-/*Conteúdo Secundário*/
-.conteudo-secundario {
+.texto1 {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    width: 1750px;
     margin-top: 48px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ec664e;
+    background: #f3afa507;
 }
 
-.conteudo-secundario-titulo {
-    border-top: 0.4px solid #FFF2E7;
-    padding-top: 48px;
-    font-family: 'Righteous', cursive;
-    font-weight: 400;
-    font-size: 24px;
-    color: #FFF2E7;
-    margin-bottom: 16px;
+.texto1 h1{
+    font-style: italic;
+    font-size: 30px;
 }
 
-.conteudo-secundario-paragrafo {
-    font-family: 'Sarala', sans-serif;
-    color: #ECD6C4;
-    font-weight: 300;
+.texto2 {
+    padding-top: 50px;
+}
+
+.texto2 p {
+    font-style: italic;
+    padding: 5px;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    width: 100%;
+}
+
+.principalImg::after {
+    content: "";
+
+}
+
+
+/*DESCRIÇÃO SOBRE O SISTEMA*/
+.descricao {
+    padding-top: 50px;
+    height: 500px;
+    text-align: center;
+}
+
+.parte1 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    color: #8c6272;
+}
+
+.parte1 p {
+    padding: 10px;
+    color: #8c6272;
+    font-size: 20px;
+}
+
+
+/*INFORMAÇÕES DE MELHORIAS*/
+.divisoes {
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+    padding-top: 180px;
+}
+
+.controle {
+    padding-top: 10px;
+    text-align: center;
+    margin-top:50px ;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    background:white;
+    box-shadow: 1px 2px 15px 5px #8c6272;
+}
+
+.controle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: #8c6272;
+    cursor: pointer;
+}
+
+.controle:hover{
+
+}
+
+.controle li{
+
+    padding-top: 30px;
+}
+
+
+.melhoria {
+    padding-top: 10px;
+    text-align: center;
+    margin-top:50px ;
+    width: 350px;
+    height: 300px;
+    background:white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 15px 5px #8c6272;
+}
+
+.melhoria {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: #8c6272;
+    cursor: pointer;
+}
+
+.melhoria:hover{
+
+}
+
+.melhoria li{
+
+    padding-top: 30px;
+}
+
+
+.destaques {
+    padding-top: 10px;
+    text-align: center;
+    margin-top:50px ;
+    width: 350px;
+    height: 300px;
+    background:white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 15px 5px #8c6272;
+}
+
+.destaques {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: #8c6272;
+    cursor: pointer;
+}
+
+.destaques:hover{
+
+}
+
+.destaques li{
+
+    padding-top: 30px;
+}
+
+.containerInformacoes::before{
+    content: '';
+    background-image: url(/Facility-Stock/build/web/img/img-new/Pattern-4.png);
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #d19fc0a8;
+}
+
+.contatoLocalizacao {
+    width: 100%;
+    height: 250px;
+    background: #e3847394;
+    border-top-left-radius: 250px;
+    border-top-right-radius:250px;
+    border-bottom-left-radius:250px;
+    border-bottom-right-radius:250px;
+    
+    
+}
+
+.contatos {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contatos h1 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.contatos p{
+    color: white;
     font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    padding-top:15px ;
 }
 
-/*rodapé*/
-.rodape {
-    padding: 32px;
-    border-top: 0.4px solid #FFF2E7;
+.btnContato {
+    /*width: 200px;
+    height: 50px;*/
+    background-color: #0d346b;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
-.rodape-imagem {
-    display: block;
-    margin: 0 auto;
+.btnContato a {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
 }
+
+.btnContato a:hover {
+    background-color: white;
+    color: #0d346b;
+    transition: .5s;
+}
+
+
+.redes {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer {
+    font-size:16px;
+    color: #0d346b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    text-align:center;
+    width: 100%;
+    height: 25px;
+    background: rgba(128, 128, 128, 0.26);
+}
+
+/*RESPONSIVIDADE*/
+@media ()
+
+
