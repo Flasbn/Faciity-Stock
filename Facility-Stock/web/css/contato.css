@@ -75,6 +75,13 @@ nav li, a {
 .dados input{
     width: 640px;
     height: 30px;
+    padding-left: 20px;
+    border-radius:5px ;
+    border: 1px solid gray;
+}
+
+textarea {
+    border-radius: 5px;
 }
 
 .dados #msg{
