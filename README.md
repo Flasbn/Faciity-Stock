@@ -1,6 +1,7 @@
 # Faciity-Stock
 
-Projeto prático semestral, aplicativo para a universidade Nove de Julho (UNINOVE)
+Projeto prático semestral. Sistema de gerenciamento de Estoque para a universidade Nove de Julho (UNINOVE).
+Projeto Parte 1 - Site
 ![1](https://user-images.githubusercontent.com/80727677/171741842-6c87fea2-5dd9-4e9a-8bb5-b06ee20c43ee.png)
 
 
