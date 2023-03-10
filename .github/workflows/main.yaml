@@ -1,0 +1,45 @@
+name: Test
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, World!
+        
+        
+ deploy-test:
+  runs-on: ubuntu-latest
+  environment:
+    name: test
+    url: 'teste.com'
+ needs: build
+ steps:
+  -name: Run a one-line script
+    run: echo Deploy Test
+    
+    
+    
+ deploy-hmg:
+  runs-on: ubuntu-latest
+  environment:
+    name: hmg
+    url: 'teste.com'
+ needs: deploy-test
+ steps:
+  -name: Run a one-line script
+    run: echo Deploy HMG    
+    
+    
+deploy-prd:
+  runs-on: ubuntu-latest
+  environment:
+    name: prd
+    url: 'teste.com'
+ needs: deploy-hmg
+ steps:
+  -name: Run a one-line script
+    run: echo Deploy PRD       
